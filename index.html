@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Web</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <style>
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+
+	font-size: 7px;   
+	/* 1rem = 7px */
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	text-align: center;
+	background-color: #333;
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+p {
+	padding: 1.6rem 0;
+}
+
+
+/*header*/
+header {
+	height: 45rem;
+}
+
+header .bg-image {
+	position: absolute;
+	background-image: url(img/bg.jpeg);
+	background-size: cover;
+	background-position: center;
+	height: 45rem;
+	width: 100%;
+	opacity: 0.4;
+	z-index: -1;
+}
+
+header h1 {
+	padding: 11rem;
+	padding-bottom: 0;
+}
+
+.btn {
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	border: 1px solid #666;
+	padding: 1.6rem 3.2rem;
+	margin: .5rem 0;
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	background-color: #eaeaea;
+	color: #333;
+}
+
+.section-a {
+	background-color: #eaeaea;
+	color :#333 ; 
+	padding : 3.2rem 0  
+}
+
+img{
+	width : 100% ; 
+	
+}
+
+.section-b {
+	padding : 2rem ; 
+}
+.section-b ul {
+	list-style : none ; 
+}
+
+.section-b li {
+	background-color: white;
+	color: #333 ; 
+	margin-bottom : 1.5rem ;	
+}
+
+.section-b .col-content {
+	padding : 1.5rem ; 
+}
+
+.section-c {
+
+	color : #333 ; 
+	padding : 1.9rem ; 
+	background-color: #eaeaea;
+}
+/* ---------------- */
+
+.section-d .box:first-child {
+	background-color: #2690d4;
+}
+.section-d .box {
+	padding : 5rem ; 
+}
+
+footer {
+	background-color:black;
+	padding : 3em ;
+}
+
+footer a {
+	color : #abaaf6
+
+
+}
+
+
+  
+@media screen and (min-width : 800px){
+html {
+	font-size : 8px ; 
+
+	
+}
+}
+
+
+
+
+  @media screen and (min-width :1200px )  {
+
+	.box {
+		width : 50% ; 
+		float : left ; 
+		
+		 
+	}
+
+	.section-d::after {
+		content : "" ; 
+		display : block ; 
+		clear : both; 
+	}
+
+	html {
+		font-size : 9px ; 
+	
+	}
+
+
+
+  }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+	<header>
+		<div class="bg-image"></div>
+		<div class="content">
+			<h1>Welcome</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, explicabo.
+			</p>
+			<a href="#" class="btn">Read More</a>
+		</div>
+		
+		
+	</header>
+
+	<main>
+		<section class="section-a">
+			<div class="content">
+				<h2>Web & Application Development </h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nobis quidem nihil aliquid et, !</p>
+			</div>
+		</section>
+		<section class="section-b">
+			<ul>
+				<li>
+					<div class="col">
+						<img src = "img/1.jpeg">
+						<div class="col-content">
+							<h3 class="col-title">Web Application</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi non ea nobis maiores voluptate.</p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="col">
+						<img src = "img/2.jpeg">
+						<div class="col-content">
+							<h3 class="col-title">Web Application</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi non ea nobis maiores voluptate.</p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="col">
+						<img src = "img/3.jpeg">
+						<div class="col-content">
+							<h3 class="col-title">Web Application</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi non ea nobis maiores voluptate.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="section-c">
+			<div class="content">
+				<h2>Lorem ipsum dolor sit.</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe dolorem atque perspiciatis nostrum nulla.</p>
+			</div>
+		</section>
+		<section class="section-d">
+			<div class="box">
+				<h2 class="content-title">About Us</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eum eos. Perspiciatis aut harum quidem.</p>
+				<p>muhittinkeser/contact</p>
+			</div>
+			<div class="box">
+				<h2 class="content-title">Contact Us</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eum eos. Perspiciatis aut harum quidem.</p>
+				<p>muhittinkeser.com</p>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div>Develop your dreams</div>
+		<div>Online courses by <a href="">muhittin keser</a></div>
+	</footer>
+
+
+
+	
+</body>
+</html>
